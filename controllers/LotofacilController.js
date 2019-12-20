@@ -14,7 +14,7 @@ module.exports = {
                 var dezenas = [];
                 window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
 
-                var html = window.$("html").text().split("0");
+                var html = window.$("html").text();
                 
 
                 if (html.length < 4) {
