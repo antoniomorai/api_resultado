@@ -36,20 +36,7 @@ module.exports = {
                    
 
                     dezenas: dezenas.slice(6, 12),
-                    premiacao2: {
-                        sena: {
-                            ganhadores: 0,
-                            valorPago: 0
-                        },
-                        quina: {
-                            ganhadores: 0,
-                            valorPago: 0
-                        },
-                        quadra: {
-                            ganhadores: 0,
-                            valorPago: 0
-                        }
-                    },
+                    
 
                 };
 
