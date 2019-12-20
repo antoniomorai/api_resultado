@@ -36,7 +36,7 @@ module.exports = {
                    
 
                     dezenas: dezenas.slice(6, 12),
-                    premiacao: {
+                    premiacao22: {
                         sena: {
                             ganhadores: 0,
                             valorPago: 0
