@@ -22,7 +22,7 @@ module.exports = {
                 }
 
                 var retorno = {
-                    nome:"LOTOFÁCIL",
+                    nome:"LOTOFÁCILOPA",
                     numero_concurso:html[0],
                     data_concurso:html[34],
                     data_concurso_milliseconds:1562122800000,
@@ -30,15 +30,6 @@ module.exports = {
                     rateio_processamento:false,
                     acumulou:false,
                     valor_acumulado:0,
-                    dezenas:[html[3],
-                             html[4],
-                             html[5],
-                             html[6],
-                             html[7],
-                             html[8],
-                             html[9],
-                             html[10],
-                             html[11],html[12],html[13],html[14],html[15],html[16],html[17]],
                     teste: html[3],
                     numero: html[0],//ok
                     data: html[11],
