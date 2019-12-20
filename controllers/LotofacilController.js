@@ -32,7 +32,7 @@ module.exports = {
                     valor_acumulado:0,
                     dezenas:["05","37","43","49", "54","56"],
                     valor_estimado_proximo_concurso:3000000,
-                    //premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
+                    premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
                    
 
                     dezenas: dezenas.slice(6, 12),
