@@ -1,0 +1,24 @@
+{% extends 'layout.html' %} {% block title %}{{ title }}{% endblock %} {% block content %}
+
+<ul id="apis">
+  <li class="api-item">
+    <h2 class="api-item-title">Chamadas</h2>
+
+    <ul class="endpoints">
+      {% include 'loterias/megasena.html' %} {% include 'loterias/megasena_concurso.html' %}
+      {% include 'loterias/quina.html' %} {% include 'loterias/quina_concurso.html' %}
+      {% include 'loterias/lotofacil.html' %} {% include 'loterias/lotofacil_concurso.html' %}
+    </ul>
+  </li>
+
+  <li class="api-item">
+    <h2 class="api-item-title">Api check's</h2>
+
+    <ul class="endpoints">
+      {% include 'check/ping.html' %} {% include 'check/versao.html' %}
+    </ul>
+  </li>
+
+</ul>
+
+{% endblock %}

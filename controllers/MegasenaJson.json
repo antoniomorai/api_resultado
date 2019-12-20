@@ -1,0 +1,79 @@
+
+
+2218|0,00|
+16
+06
+38
+22
+52
+48
+|1|40.059.665,22|42|64.678,28|3.345|1.160,14|Ver concurso anterior||19/12/2019|SÃO PAULO|SP|Espaço Loterias Caixa||2220|0|12.053.130,69|
+UF	Nº de Ganhadores
+SP	1
+FRANCA	1
+|
+06
+16
+22
+38
+48
+52
+|2.500.000,00|21/12/2019|93.320.332,18|47.115.841,50
+
+
+
+{  
+   "nome":"MEGA-SENA",
+   "numero_concurso":2165,
+   "data_concurso":"2019-07-03T00:00:00-03:00",
+   "data_concurso_milliseconds":1562122800000,
+   "local_realizacao":"S\u00c3O PAULO, SP",
+   "rateio_processamento":false,
+   "acumulou":false,
+   "valor_acumulado":0,
+   "dezenas":[  
+      "05",
+      "37",
+      "43",
+      "49",
+      "54",
+      "56"
+   ],
+   "premiacao":[  
+      {  
+         "nome":"Sena",
+         "quantidade_ganhadores":1,
+         "valor_total":35218398.02,
+         "acertos":6
+      },
+      {  
+         "nome":"Quina",
+         "quantidade_ganhadores":113,
+         "valor_total":26216.82,
+         "acertos":5
+      },
+      {  
+         "nome":"Quadra",
+         "quantidade_ganhadores":8189,
+         "valor_total":516.8,
+         "acertos":4
+      }
+   ],
+   "local_ganhadores":[  
+      {  
+         "local":"S\u00c3O PAULO\/SP",
+         "cidade":"S\u00c3O PAULO",
+         "uf":"SP",
+         "quantidade_ganhadores":1,
+         "canal_eletronico":false
+      }
+   ],
+   "arrecadacao_total":51383654,
+   "data_proximo_concurso":"2019-07-06T00:00:00-03:00",
+   "data_proximo_concurso_milliseconds":1562382000000,
+   "valor_estimado_proximo_concurso":3000000,
+   "valor_final_concurso_acumulado":3430264.56,
+   "numero_final_concurso_acumulado":0,
+   "valor_acumulado_especial":55991319.28,
+   "nome_acumulado_especial":"Mega da Virada"
+}
