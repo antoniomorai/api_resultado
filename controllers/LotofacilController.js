@@ -22,6 +22,7 @@ module.exports = {
                 }
 
                 var retorno = {
+                    teste: html[3],
                     numero: html[0],//ok
                     data: html[11],
                     cidade: html[12] + '/' + html[13],
