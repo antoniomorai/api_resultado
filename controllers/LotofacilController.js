@@ -81,7 +81,7 @@ module.exports = {
                     local: html[14],
                     valorAcumulado: html[1],
                     dezenas: dezenas.slice(6, 12),
-                    premiacao: {
+                    premiacao2: {
                         sena: {
                             ganhadores: html[3],
                             valorPago: html[4]
