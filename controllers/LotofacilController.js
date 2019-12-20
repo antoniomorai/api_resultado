@@ -23,7 +23,7 @@ module.exports = {
 
                 var retorno = {
                     nome:"LOTOFÁCILOPA",
-                    numero_concurso:html[0],
+                    numero_concurso:html,
                     data_concurso:html[34],
                     data_concurso_milliseconds:1562122800000,
                     local_realizacao:html[31],
