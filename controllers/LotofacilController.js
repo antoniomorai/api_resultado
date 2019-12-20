@@ -35,7 +35,7 @@ module.exports = {
                     premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
                    
 
-                    dezenas: dezenas.slice(6, 12),
+                    dezenas: (6, 12),
                     
                 };
 
