@@ -30,34 +30,27 @@ module.exports = {
                     rateio_processamento:false,
                     acumulou:false,
                     valor_acumulado:0,
-                    teste: html[3],
-                    numero: html[0],//ok
-                    data: html[11],
-                    cidade: html[12] + '/' + html[13],
-                    local: html[14],
-                    valorAcumulado: html[1],
+                    dezenas:["05","37","43","49", "54","56"],
+                    valor_estimado_proximo_concurso:3000000,
+                    premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
+                   
+
                     dezenas: dezenas.slice(6, 12),
-                    premiacao: {
+                    premiacao2: {
                         sena: {
-                            ganhadores: html[3],
-                            valorPago: html[4]
+                            ganhadores: 0,
+                            valorPago: 0
                         },
                         quina: {
-                            ganhadores: html[5],
-                            valorPago: html[6]
+                            ganhadores: 0,
+                            valorPago: 0
                         },
                         quadra: {
-                            ganhadores: html[7],
-                            valorPago: html[8]
+                            ganhadores: 0,
+                            valorPago: 0
                         }
                     },
-                    arrecadacaoTotal: html[24],
-                    proximoConcurso: {
-                        data: html[22],
-                        valorEstimado: html[21],
-                    },
-                    valorAcumuladoFinalCinco: html[18],
-                    valorAcumuladoMegaVirada: html[23]
+
                 };
 
                 res.json(retorno);
