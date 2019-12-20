@@ -30,7 +30,7 @@ module.exports = {
                     rateio_processamento:false,
                     acumulou:false,
                     valor_acumulado:0,
-                    dezenas:[html[25].substring(21, 23),html[25].substring(24, 26),html[25].substring(27, 29),html[25].substring(30, 32),html[25].substring(33, 35),html[25].substring(36, 38)],
+                    dezenas:[html[25].substring(21, 23),html[25].substring(24, 26),html[25].substring(27, 29),html[25].substring(30, 32),html[25].substring(33, 35)],
                     valor_estimado_proximo_concurso:3000000,
                     premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
                    
