@@ -23,7 +23,7 @@ module.exports = {
 
                 var retorno = {
                     nome:"LOTOFÁCIL",
-                    numero_concurso:html[4],
+                    numero_concurso:html[4].substring(11),
                     data_concurso:html[34],
                     data_concurso_milliseconds:1562122800000,
                     local_realizacao:html[31],
