@@ -20,7 +20,7 @@ module.exports = {
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
                 }
-                
+
                 var retorno = {  
                     nome:"MEGA-SENA",
                     numero_concurso:html[0],
@@ -28,7 +28,7 @@ module.exports = {
                     data_concurso_milliseconds:1562122800000,
                     local_realizacao:html[12],
                     rateio_processamento:false,
-                    acumulou:html[3],
+                    acumulou:html[13],
                     valor_acumulado:html[1],
                     dezenas:dezenas.slice(6, 12),
                     premiacao:[  

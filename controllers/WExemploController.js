@@ -1,7 +1,7 @@
 'use strict';
 var jsdom = require('jsdom');
 
-const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";
+const url = "http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/quina/!ut/p/a1/jc69DoIwAATgZ_EJepS2wFgoaUswsojYxXQyTfgbjM9vNS4Oordd8l1yxJGBuNnfw9XfwjL78dmduIikhYFGA0tzSFZ3tG_6FCmP4BxBpaVhWQuA5RRWlUZlxR6w4r89vkTi1_5E3CfRXcUhD6osEAHA32Dr4gtsfFin44Bgdw9WWSwj/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2XzYxTDBIMEcwSjBJMjgwQTRFUDJWSlYzMDM1/dl5/d5/L2dBISEvZ0FBIS9nQSEh/pw/Z7_61L0H0G0J0VSC0AC4GLFAD20G6/res/id=buscaResultado/c=cacheLevelPage/=/?timestampAjax=1565647821868";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
@@ -14,56 +14,30 @@ module.exports = {
                 var dezenas = [];
                 window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
 
-                var html = window.$("html").text().split("|");
+                var html = window.$("html").text().split(",");
                 
 
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
                 }
 
-                var retorno = {  
-                    nome:"FEDERAL",
-                    numero_concurso:5403,
-                    data_concurso:"2019-07-06T00:00:00-03:00",
-                    data_concurso_milliseconds:1562382000000,
-                    local_realizacao:"SAO PAULO, SP",
+                var retorno = {
+                    nome:"LOTOFÁCIL",
+                    numero_concurso:html[4].substring(11),
+                    data_concurso:html[34].substring(11, 21),
+                    data_concurso_milliseconds:html[5].substring(7),
+                    local_realizacao:html[15].substring(13, 22),
                     rateio_processamento:false,
-                    premiacao:[  
-                       {  
-                          nome:"1\u00ba Pr\u00eamio",
-                          bilhete:22061,
-                          valor_total:500000,
-                          faixa:1
-                       },
-                       {  
-                          nome:"2\u00ba Pr\u00eamio",
-                          bilhete:73556,
-                          valor_total:27000,
-                          faixa:2
-                       },
-                       {  
-                          nome:"3\u00ba Pr\u00eamio",
-                          bilhete:1709,
-                          valor_total:24000,
-                          faixa:3
-                       },
-                       {  
-                          nome:"4\u00ba Pr\u00eamio",
-                          bilhete:41013,
-                          valor_total:19000,
-                          faixa:4
-                       },
-                       {  
-                          nome:"5\u00ba Pr\u00eamio",
-                          bilhete:82320,
-                          valor_total:18329,
-                          faixa:5
-                       }
-                    ],
-                    data_proximo_concurso:"2019-07-10T00:00:00-03:00",
-                    data_proximo_concurso_milliseconds:1562727600000,
-                    valor_estimado_proximo_concurso:500000
-                 };
+                    acumulou:false,
+                    valor_acumulado:0,
+                    dezenas:[html[25].substring(21, 23),html[25].substring(24, 26),html[25].substring(27, 29),html[25].substring(30, 32),html[25].substring(33, 35)],
+                    valor_estimado_proximo_concurso:3000000,
+                    premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
+                   
+
+                    dezenas22: (6, 12),
+                    
+                };
 
                 res.json(retorno);
             }
@@ -93,7 +67,7 @@ module.exports = {
                     local: html[14],
                     valorAcumulado: html[1],
                     dezenas: dezenas.slice(6, 12),
-                    premiacao: {
+                    premiacao2: {
                         sena: {
                             ganhadores: html[3],
                             valorPago: html[4]
