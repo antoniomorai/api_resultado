@@ -24,7 +24,7 @@ module.exports = {
                 var acumulou = html[3];
                 var res = false;
                 
-                if(acumulou == 0){ res = false}else{res = true};
+                if(acumulou === 0){ res = false;}else{res = true;};
 
                 var retorno = {  
                     nome:"MEGA-SENA",
