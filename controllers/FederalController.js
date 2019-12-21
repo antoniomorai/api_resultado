@@ -1,7 +1,7 @@
 'use strict';
 var jsdom = require('jsdom');
 
-const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";
+const url = "http://www1.caixa.gov.br/loterias/loterias/federal/federal_pesquisa.asp";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
@@ -23,10 +23,10 @@ module.exports = {
 
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:html[0],
-                    data_concurso:html[11],
+                    numero_concurso:html[3],
+                    data_concurso:html[16],
                     data_concurso_milliseconds:1562382000000,
-                    local_realizacao:html[12],
+                    local_realizacao:html[3],
                     rateio_processamento:false,
                     premiacao:[  
                        {  
