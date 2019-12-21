@@ -24,7 +24,7 @@ module.exports = {
                 
                 var res = "false";
                 
-                if(html[3] === 0){ res = "false";}else{res = "true";};
+                if(html[3] === "0"){ res = "false";}else{res = "true";};
 
                 var retorno = {  
                     nome:"MEGA-SENA",
