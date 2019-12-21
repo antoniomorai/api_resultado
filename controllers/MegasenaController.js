@@ -55,7 +55,7 @@ module.exports = {
                        {  
                           local:html[14],
                           cidade:html[12],
-                          uf:"NEHUM",
+                          uf:html[13],
                           quantidade_ganhadores:1,
                           canal_eletronico:false
                        }
