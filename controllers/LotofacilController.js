@@ -30,23 +30,7 @@ module.exports = {
                     rateio_processamento:false,
                     acumulou:html[36],
                     valor_acumulado:0,
-                    dezenas:[  
-                       html[3],
-                       html[4],
-                       html[5],
-                       html[6],
-                       html[7],
-                       html[8],
-                       html[9],
-                       html[10],
-                       html[11],
-                       html[12],
-                       html[13],
-                       html[14],
-                       html[15],
-                       html[16],
-                       html[17]
-                    ],
+                    dezenas:[html[3],html[4],html[5],html[6],html[7],html[8],html[9],html[10],html[11],html[12],html[13],html[14],html[15],html[16],html[17]],
                     premiacao:[  
                        {  
                           nome:"15 Acertos",
