@@ -45,7 +45,7 @@ module.exports = {
                        html[14],
                        html[15],
                        html[16],
-                       html[17],
+                       html[17]
                     ],
                     premiacao:[  
                        {  
