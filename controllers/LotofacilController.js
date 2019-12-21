@@ -23,12 +23,12 @@ module.exports = {
 
                 var retorno = {  
                     nome:"LOTOFÁCIL",
-                    numero_concurso:1835,
-                    data_concurso:"2019-07-03T00:00:00-03:00",
+                    numero_concurso:html[0],
+                    data_concurso:html[34],
                     data_concurso_milliseconds:1562122800000,
-                    local_realizacao:"S\u00c3O PAULO, SP",
+                    local_realizacao:html[31],
                     rateio_processamento:false,
-                    acumulou:false,
+                    acumulou:html[36],
                     valor_acumulado:0,
                     dezenas:[  
                        "01",
