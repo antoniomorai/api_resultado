@@ -28,7 +28,7 @@ module.exports = {
                     data_concurso_milliseconds:1562122800000,
                     local_realizacao:html[12],
                     rateio_processamento:false,
-                    acumulou:html[13],
+                    acumulou:html[3],
                     valor_acumulado:html[1],
                     dezenas:dezenas.slice(6, 12),
                     premiacao:[  
