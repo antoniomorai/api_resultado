@@ -1,7 +1,7 @@
 'use strict';
 var jsdom = require('jsdom');
 
-const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";
+const url = "http://www1.caixa.gov.br/loterias/loterias/duplasena/duplasena_pesquisa_new.asp";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
@@ -23,40 +23,26 @@ module.exports = {
 
                 var retorno = {  
                     nome:"DUPLASENA",
-                    numero_concurso:1943,
-                    data_concurso:"2019-06-01T00:00:00-03:00",
+                    numero_concurso:html[0],
+                    data_concurso:html[17],
                     data_concurso_milliseconds:1559358000000,
-                    local_realizacao:"S\u00c3O PAULO, SP",
+                    local_realizacao:html[14],
                     rateio_processamento:false,
-                    acumulou:false,
-                    valor_acumulado:91580.88,
-                    dezenas:[  
-                       "06",
-                       "08",
-                       "22",
-                       "25",
-                       "38",
-                       "48"
-                    ],
-                    dezenas_2:[  
-                       "04",
-                       "13",
-                       "20",
-                       "31",
-                       "35",
-                       "42"
-                    ],
+                    acumulou:html[6],
+                    valor_acumulado:html[22],
+                    dezenas:dezenas.slice(0, 6),
+                    dezenas_2:dezenas.slice(6, 12),
                     premiacao:[  
                        {  
                           nome:"Sena",
                           quantidade_ganhadores:1,
-                          valor_total:4379565.38,
+                          valor_total:html[7],
                           acertos:6
                        },
                        {  
                           nome:"Quina",
                           quantidade_ganhadores:36,
-                          valor_total:2312.65,
+                          valor_total:html[26],
                           acertos:5
                        },
                        {  
