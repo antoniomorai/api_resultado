@@ -21,10 +21,10 @@ module.exports = {
                     return res.status(404).json({ error: "Resultado não encontrado" });
                 }
                 
-                
+                var acumulou = html[3];
                 var res = "false";
                 
-                if(html[3] === "0"){ res = "false";}else{res = "true";};
+                if(acumulou == "0"){ res = "false";}else{res = "true";};
 
                 var retorno = {  
                     nome:"MEGA-SENA",
