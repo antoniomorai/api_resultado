@@ -28,15 +28,15 @@ module.exports = {
                     data_concurso_milliseconds:1562122800000,
                     local_realizacao:html[31],
                     rateio_processamento:false,
-                    acumulou:html[36],
+                    acumulou:html[18],//36
                     valor_acumulado:0,
                     dezenas:[html[3],html[4],html[5],html[6],html[7],html[8],html[9],html[10],html[11],html[12],html[13],html[14],html[15],html[16],html[17]],
               
                     premiacao:[  
                        {  
                           nome:"15 Acertos",
-                          quantidade_ganhadores:5,
-                          valor_total:454417.95,
+                          quantidade_ganhadores:html[18],//36
+                          valor_total:html[19],//36
                           acertos:15
                        },
                        {  
