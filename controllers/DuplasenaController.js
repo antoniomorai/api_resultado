@@ -35,7 +35,7 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"Sena",
-                          quantidade_ganhadores:1,
+                          quantidade_ganhadores:html[6],
                           valor_total:html[7],
                           acertos:6
                        },
