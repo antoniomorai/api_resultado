@@ -30,7 +30,7 @@ module.exports = {
                     rateio_processamento:false,
                     acumulou:false,
                     valor_acumulado:html[1],
-                    dezenas:[dezenas.slice(6, 12)],
+                    dezenas:dezenas.slice(6, 12),
                     premiacao:[  
                        {  
                           nome:"Sena",
