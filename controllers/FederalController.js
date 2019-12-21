@@ -23,10 +23,10 @@ module.exports = {
 
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:5403,
-                    data_concurso:"2019-07-06T00:00:00-03:00",
+                    numero_concurso:html[0],
+                    data_concurso:html[11],
                     data_concurso_milliseconds:1562382000000,
-                    local_realizacao:"SAO PAULO, SP",
+                    local_realizacao:html[12],
                     rateio_processamento:false,
                     premiacao:[  
                        {  
