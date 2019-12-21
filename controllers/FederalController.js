@@ -31,32 +31,32 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"1\u00ba Pr\u00eamio",
-                          bilhete:22061,
-                          valor_total:500000,
+                          bilhete:html[6],
+                          valor_total:html[7],
                           faixa:1
                        },
                        {  
                           nome:"2\u00ba Pr\u00eamio",
-                          bilhete:73556,
-                          valor_total:27000,
+                          bilhete:html[8],
+                          valor_total:html[9],
                           faixa:2
                        },
                        {  
                           nome:"3\u00ba Pr\u00eamio",
-                          bilhete:1709,
-                          valor_total:24000,
+                          bilhete:html[10],
+                          valor_total:html[11],
                           faixa:3
                        },
                        {  
                           nome:"4\u00ba Pr\u00eamio",
-                          bilhete:41013,
-                          valor_total:19000,
+                          bilhete:html[12],
+                          valor_total:html[13],
                           faixa:4
                        },
                        {  
                           nome:"5\u00ba Pr\u00eamio",
-                          bilhete:82320,
-                          valor_total:18329,
+                          bilhete:html[14],
+                          valor_total:html[15],
                           faixa:5
                        }
                     ],
