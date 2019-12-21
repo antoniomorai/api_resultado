@@ -22,9 +22,9 @@ module.exports = {
                 }
                 
                 var ac = html[3];
-                //var res = "false";
+                var res = "false";
                 
-                //if(acumulou == "0"){ res = "false";}else{res = "true";};
+                if(ac == "0"){ res = "false";}else{res = "true";};
 
                 var retorno = {  
                     nome:"MEGA-SENA",
