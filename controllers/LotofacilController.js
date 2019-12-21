@@ -1,7 +1,7 @@
 'use strict';
 var jsdom = require('jsdom');
 
-const url = "http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/quina/!ut/p/a1/jc69DoIwAATgZ_EJepS2wFgoaUswsojYxXQyTfgbjM9vNS4Oordd8l1yxJGBuNnfw9XfwjL78dmduIikhYFGA0tzSFZ3tG_6FCmP4BxBpaVhWQuA5RRWlUZlxR6w4r89vkTi1_5E3CfRXcUhD6osEAHA32Dr4gtsfFin44Bgdw9WWSwj/dl5/d5/L2dJQSEvUUt3QS80SmlFL1o2XzYxTDBIMEcwSjBJMjgwQTRFUDJWSlYzMDM1/dl5/d5/L2dBISEvZ0FBIS9nQSEh/pw/Z7_61L0H0G0J0VSC0AC4GLFAD20G6/res/id=buscaResultado/c=cacheLevelPage/=/?timestampAjax=1565647821868";
+const url = "http://www1.caixa.gov.br/loterias/loterias/lotofacil/lotofacil_pesquisa_new.asp";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
@@ -14,30 +14,115 @@ module.exports = {
                 var dezenas = [];
                 window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
 
-                var html = window.$("html").text().split(",");
+                var html = window.$("html").text().split("|");
                 
 
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
                 }
 
-                var retorno = {
+                var retorno = {  
                     nome:"LOTOFÁCIL",
-                    numero_concurso:html[4].substring(11),
-                    data_concurso:html[34].substring(11, 21),
-                    data_concurso_milliseconds:html[5].substring(7),
-                    local_realizacao:html[15].substring(13, 22),
+                    numero_concurso:1835,
+                    data_concurso:"2019-07-03T00:00:00-03:00",
+                    data_concurso_milliseconds:1562122800000,
+                    local_realizacao:"S\u00c3O PAULO, SP",
                     rateio_processamento:false,
                     acumulou:false,
                     valor_acumulado:0,
-                    dezenas:[html[25].substring(21, 23),html[25].substring(24, 26),html[25].substring(27, 29),html[25].substring(30, 32),html[25].substring(33, 35)],
-                    valor_estimado_proximo_concurso:3000000,
-                    premiacao:[{"nome":"Sena","quantidade_ganhadores":1,"valor_total":35218398.02,"acertos":6}],
-                   
-
-                    dezenas22: (6, 12),
-                    
-                };
+                    dezenas:[  
+                       "01",
+                       "04",
+                       "06",
+                       "07",
+                       "11",
+                       "13",
+                       "14",
+                       "15",
+                       "16",
+                       "18",
+                       "20",
+                       "21",
+                       "22",
+                       "23",
+                       "24"
+                    ],
+                    premiacao:[  
+                       {  
+                          nome:"15 Acertos",
+                          quantidade_ganhadores:5,
+                          valor_total:454417.95,
+                          acertos:15
+                       },
+                       {  
+                          nome:"14 Acertos",
+                          quantidade_ganhadores:515,
+                          valor_total:1357.49,
+                          acertos:14
+                       },
+                       {  
+                          nome:"13 Acertos",
+                          quantidade_ganhadores:15571,
+                          valor_total:20,
+                          acertos:13
+                       },
+                       {  
+                          nome:"12 Acertos",
+                          quantidade_ganhadores:199004,
+                          valor_total:8,
+                          acertos:12
+                       },
+                       {  
+                          nome:"11 Acertos",
+                          quantidade_ganhadores:1090310,
+                          valor_total:4,
+                          acertos:11
+                       }
+                    ],
+                    local_ganhadores:[  
+                       {  
+                          local:"MORRO DO CHAP\u00c9U\/BA",
+                          cidade:"MORRO DO CHAP\u00c9U",
+                          uf:"BA",
+                          quantidade_ganhadores:1,
+                          canal_eletronico:false
+                       },
+                       {  
+                          local:"MINA\u00c7U\/GO",
+                          cidade:"MINA\u00c7U",
+                          uf:"GO",
+                          quantidade_ganhadores:1,
+                          canal_eletronico:false
+                       },
+                       {  
+                          local:"CONTAGEM\/MG",
+                          cidade:"CONTAGEM",
+                          uf:"MG",
+                          quantidade_ganhadores:1,
+                          canal_eletronico:false
+                       },
+                       {  
+                          local:"UBERL\u00c2NDIA\/MG",
+                          cidade:"UBERL\u00c2NDIA",
+                          uf:"MG",
+                          quantidade_ganhadores:1,
+                          canal_eletronico:false
+                       },
+                       {  
+                          local:"PASSO FUNDO\/RS",
+                          cidade:"PASSO FUNDO",
+                          uf:"RS",
+                          quantidade_ganhadores:1,
+                          canal_eletronico:false
+                       }
+                    ],
+                    arrecadacao_total:25971124,
+                    data_proximo_concurso:"2019-07-05T00:00:00-03:00",
+                    data_proximo_concurso_milliseconds:1562295600000,
+                    valor_estimado_proximo_concurso:2000000,
+                    valor_acumulado_especial:58710299.06,
+                    nome_acumulado_especial:"Independ\u00eancia"
+                 };
 
                 res.json(retorno);
             }
@@ -67,7 +152,7 @@ module.exports = {
                     local: html[14],
                     valorAcumulado: html[1],
                     dezenas: dezenas.slice(6, 12),
-                    premiacao2: {
+                    premiacao: {
                         sena: {
                             ganhadores: html[3],
                             valorPago: html[4]
