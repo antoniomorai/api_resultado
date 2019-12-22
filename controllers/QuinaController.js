@@ -23,24 +23,18 @@ module.exports = {
 
                 var retorno = {  
                     nome:"QUINA",
-                    numero_concurso:5007,
-                    data_concurso:"2019-06-29T00:00:00-03:00",
+                    numero_concurso:html[0],
+                    data_concurso:html[16],
                     data_concurso_milliseconds:1561777200000,
-                    local_realizacao:"S\u00c3O PAULO, SP",
+                    local_realizacao:html[4],
                     rateio_processamento:false,
-                    acumulou:false,
+                    acumulou:html[6],
                     valor_acumulado:0,
-                    dezenas:[  
-                       "15",
-                       "19",
-                       "21",
-                       "43",
-                       "44"
-                    ],
+                    dezenas: dezenas.slice(5, 10),
                     premiacao:[  
                        {  
                           nome:"Quina",
-                          quantidade_ganhadores:1,
+                          quantidade_ganhadores:html[6],
                           valor_total:3959908.92,
                           acertos:5
                        },
@@ -69,7 +63,7 @@ module.exports = {
                     arrecadacao_total:8593930.5,
                     data_proximo_concurso:"2019-07-01T00:00:00-03:00",
                     data_proximo_concurso_milliseconds:1561950000000,
-                    valor_estimado_proximo_concurso:600000,
+                    valor_estimado_proximo_concurso:html[13],
                     valor_acumulado_especial:1697103.9,
                     nome_acumulado_especial:"S\u00e3o Jo\u00e3o"
                  };
