@@ -1,8 +1,8 @@
 'use strict';
 var jsdom = require('jsdom');
 
-//const url = "http://www1.caixa.gov.br/loterias/loterias/duplasena/duplasena_pesquisa_new.asp";
-const url ="http://www1.caixa.gov.br/loterias/loterias/duplasena/duplasena_pesquisa_new.asp?submeteu=sim&opcao=concurso&txtConcurso=2013";
+const url = "http://www1.caixa.gov.br/loterias/loterias/duplasena/duplasena_pesquisa_new.asp";
+//const url ="http://www1.caixa.gov.br/loterias/loterias/duplasena/duplasena_pesquisa_new.asp?submeteu=sim&opcao=concurso&txtConcurso=2013";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
