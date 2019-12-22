@@ -36,7 +36,7 @@ module.exports = {
                        {  
                           nome:"Quina",
                           quantidade_ganhadores:html[6],
-                          valor_total:3959908.92,
+                          valor_total:html[7],
                           acertos:5
                        },
                        {  
