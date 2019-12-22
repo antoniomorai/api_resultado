@@ -1,7 +1,8 @@
 'use strict';
 var jsdom = require('jsdom');
 
-const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";    //URL
+// const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";    //URL
+const url ="http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp?submeteu=sim&opcao=concurso&txtConcurso=2218";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
