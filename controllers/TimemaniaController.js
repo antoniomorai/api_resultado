@@ -23,12 +23,12 @@ module.exports = {
 
                 var retorno = {  
                     nome:"TIMEMANIA",
-                    numero_concurso:1325,
-                    data_concurso:"2019-04-30T00:00:00-03:00",
+                    numero_concurso:html[0],
+                    data_concurso:html[2],
                     data_concurso_milliseconds:1556593200000,
-                    local_realizacao:"S\u00c3\u0192O PAULO, SP",
+                    local_realizacao:html[5],
                     rateio_processamento:false,
-                    acumulou:false,
+                    acumulou:html[9],
                     valor_acumulado:0,
                     dezenas:[  
                        "04",
@@ -44,8 +44,8 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"7 Acertos",
-                          quantidade_ganhadores:1,
-                          valor_total:10731672.64,
+                          quantidade_ganhadores:html[9],
+                          valor_total:html[],
                           acertos:7
                        },
                        {  
