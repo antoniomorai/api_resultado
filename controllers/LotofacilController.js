@@ -2,6 +2,7 @@
 var jsdom = require('jsdom');
 
 const url = "http://www1.caixa.gov.br/loterias/loterias/lotofacil/lotofacil_pesquisa_new.asp";
+//const url ="http://www1.caixa.gov.br/loterias/loterias/lotofacil/lotofacil_pesquisa_new.asp?submeteu=sim&opcao=concurso&txtConcurso=1899";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
