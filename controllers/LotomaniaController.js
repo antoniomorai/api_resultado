@@ -1,7 +1,7 @@
 'use strict';
 var jsdom = require('jsdom');
 
-const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";
+const url = "http://www1.caixa.gov.br/loterias/loterias/lotomania/_lotomania_pesquisa.asp";
 const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
 
 module.exports = {
@@ -23,7 +23,7 @@ module.exports = {
 
                 var retorno = {  
                     nome:"LOTOMANIA",
-                    numero_concurso:1979,
+                    numero_concurso:html[0],
                     data_concurso:"2019-06-18T00:00:00-03:00",
                     data_concurso_milliseconds:1560826800000,
                     local_realizacao:"S\u00c3O PAULO, SP",
