@@ -30,22 +30,14 @@ module.exports = {
                     rateio_processamento:false,
                     acumulou:html[9],
                     valor_acumulado:0,
-                    dezenas:[  
-                       "04",
-                       "05",
-                       "06",
-                       "22",
-                       "40",
-                       "62",
-                       "63"
-                    ],
+                    
                     nome_time_coracao:"Bangu\/RJ",
                     dezena_time_coracao:"11",
                     premiacao:[  
                        {  
                           nome:"7 Acertos",
                           quantidade_ganhadores:html[9],
-                          valor_total:html[],
+                          valor_total:html[10],
                           acertos:7
                        },
                        {  
