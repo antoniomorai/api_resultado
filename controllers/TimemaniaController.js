@@ -24,7 +24,7 @@ module.exports = {
                 var retorno = {  
                     nome:"TIMEMANIA",
                     numero_concurso:html[0],
-                    data_concurso:html[2],
+                    data_concurso:html[1],
                     data_concurso_milliseconds:1556593200000,
                     local_realizacao:html[5],
                     rateio_processamento:false,
