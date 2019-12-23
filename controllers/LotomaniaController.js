@@ -28,14 +28,14 @@ module.exports = {
                     data_concurso_milliseconds:1560826800000,
                     local_realizacao:"S\u00c3O PAULO, SP",
                     rateio_processamento:false,
-                    acumulou:false,
+                    acumulou:html[27],
                     valor_acumulado:0,
                     dezenas:[html[6],html[7],html[8],html[9],html[10],html[11],html[12],html[13],html[14],html[15],html[16],html[17],html[18],html[19],html[20],html[21],html[22],html[23],html[24],html[25]],
                     premiacao:[  
                        {  
                           nome:"20 Acertos",
-                          quantidade_ganhadores:1,
-                          valor_total:3853402.35,
+                          quantidade_ganhadores:html[27],
+                          valor_total:html[28],
                           acertos:20
                        },
                        {  
