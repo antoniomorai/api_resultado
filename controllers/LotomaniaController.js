@@ -87,7 +87,7 @@ module.exports = {
                     arrecadacao_total:5362120.5,
                     data_proximo_concurso:"2019-06-21T00:00:00-03:00",
                     data_proximo_concurso_milliseconds:1561086000000,
-                    valor_estimado_proximo_concurso:400000
+                    valor_estimado_proximo_concurso:html[65]
                  };
 
                 res.json(retorno);
