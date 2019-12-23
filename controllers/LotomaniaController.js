@@ -24,9 +24,9 @@ module.exports = {
                 var retorno = {  
                     nome:"LOTOMANIA",
                     numero_concurso:html[0],
-                    data_concurso:"2019-06-18T00:00:00-03:00",
+                    data_concurso:html[41],
                     data_concurso_milliseconds:1560826800000,
-                    local_realizacao:"S\u00c3O PAULO, SP",
+                    local_realizacao:html[40],
                     rateio_processamento:false,
                     acumulou:html[27],
                     valor_acumulado:0,
