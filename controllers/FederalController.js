@@ -21,6 +21,8 @@ module.exports = {
 
                 var html = window.$("html").text().split("|");
                 var cond = window.$("h2").text().split(")</h");
+                
+                var dds = dezenas.slice(1,2);
 
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
@@ -28,7 +30,7 @@ module.exports = {
 
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:dezenas.slice(1,2),
+                    numero_concurso:dds,
                     data_concurso:"2019-07-06T00:00:00-03:00",
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:"SAO PAULO, SP",
