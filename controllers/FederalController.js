@@ -15,8 +15,8 @@ module.exports = {
                 var dezenas = [];
                 window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
 
-                var html = window.$("html").text().split("|");
-                var table = window.$("html").text().split("thead>");
+                var html = window.$("html").text().split("</td>");
+                //var table = window.$("html").text().split("</td>");
                 
 
                 if (html.length < 4) {
@@ -25,7 +25,7 @@ module.exports = {
 
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:table[0],
+                    numero_concurso:html[0],
                     data_concurso:html[16],
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:html[3],
