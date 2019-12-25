@@ -18,11 +18,11 @@ module.exports = {
                 var html = window.$("html").text().split("</td>");
                 //var table = window.$("html").text().split("</td>");
                 
-
+/*
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
                 }
-
+*/
                 var retorno = {  
                     nome:"FEDERAL",
                     numero_concurso:html[0],
