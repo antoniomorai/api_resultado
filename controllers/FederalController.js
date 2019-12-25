@@ -16,7 +16,7 @@ module.exports = {
             url,
             ["http://code.jquery.com/jquery.js"],
             function (err, window) {
-                var dezenas = [];
+                var dezenas = '';
                 window.$("table td").each(function () { dezenas.push(window.$(this).text()) });
 
                 var html = window.$("html").text().split("|");
