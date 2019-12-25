@@ -56,14 +56,14 @@ module.exports = {
                        },
                        {  
                           nome:"4\u00ba Pr\u00eamio",
-                          bilhete:41013,
-                          valor_total:19000,
+                          bilhete:dezenas[16].slice(0,6),
+                          valor_total:dezenas[19].slice(0,20),
                           faixa:4
                        },
                        {  
                           nome:"5\u00ba Pr\u00eamio",
-                          bilhete:82320,
-                          valor_total:18329,
+                          bilhete:dezenas[21].slice(0,6),
+                          valor_total:dezenas[24].slice(0,20),
                           faixa:5
                        }
                     ],
