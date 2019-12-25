@@ -30,7 +30,7 @@ module.exports = {
 
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:dds,
+                    numero_concurso:dezenas[1].slice(1,2),
                     data_concurso:"2019-07-06T00:00:00-03:00",
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:"SAO PAULO, SP",
