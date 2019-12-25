@@ -27,7 +27,7 @@ module.exports = {
 */
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:html[0],
+                    numero_concurso:0000,
                     data_concurso:html[16],
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:html[3],
@@ -35,7 +35,7 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"1\u00ba Pr\u00eamio",
-                          bilhete:html[6],
+                          bilhete:dezenas.slice(1,2),
                           valor_total:html[7],
                           faixa:1
                        },
