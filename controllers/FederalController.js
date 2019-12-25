@@ -19,8 +19,8 @@ module.exports = {
                 var dezenas = [];
                 window.$("table td").each(function () { dezenas.push(window.$(this).text()) });
 
-                var html = window.$("html").text().split("|");
-                
+                //var html = window.$("html").text().split("|");
+                var html = window.$("h2").text().split(")</h");
 
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
