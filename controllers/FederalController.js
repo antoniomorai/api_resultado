@@ -16,7 +16,7 @@ module.exports = {
                 window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
 
                 var html = window.$("html").text().split("|");
-                var table = window.$("html").text().split("/table>");
+                var table = window.$("html").text().split("thead>");
                 
 
                 if (html.length < 4) {
