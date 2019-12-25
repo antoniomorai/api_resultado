@@ -17,7 +17,7 @@ module.exports = {
             ["http://code.jquery.com/jquery.js"],
             function (err, window) {
                 var dezenas = [];
-                window.$("table td").each(function () { dezenas.push(window.$(this).text()) });
+                window.$("table td").each(function () { dezenas.push(window.$(this).html()) });
 
                 var html = window.$("html").text().split("|");
                 var cond = window.$("h2").text().split(")</h");
