@@ -13,11 +13,13 @@ module.exports = {
             ["http://code.jquery.com/jquery.js"],
             function (err, window) {
                 var dezenas = [];
-                window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
+                 window.$("table td").each(function () { 
+        
+     dezenas.push(window.$(this).text()) });
 
-                var html = window.$("table").text().split("</td>");
-                //var table = window.$("html").text().split("</td>");
-                
+     var html = window.$("h2").text().split(")</h");
+     
+    var dds = dezenas.slice(1,2);
 /*
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
