@@ -19,7 +19,7 @@ module.exports = {
 
      var html = window.$("h2").text().split(")</h");
      
-    var dds = dezenas.slice(1,2);
+    
 /*
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
@@ -35,7 +35,7 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"1\u00ba Pr\u00eamio",
-                          bilhete:dezenas.slice(1,2),
+                          bilhete:000,
                           valor_total:html[7],
                           faixa:1
                        },
