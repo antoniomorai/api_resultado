@@ -39,19 +39,19 @@ module.exports = {
                        {  
                           nome:"1\u00ba Pr\u00eamio",
                           bilhete:dezenas[1].slice(0,6),
-                          valor_total:500000,
+                          valor_total:dezenas[4].slice(0,20),
                           faixa:1
                        },
                        {  
                           nome:"2\u00ba Pr\u00eamio",
-                          bilhete:73556,
-                          valor_total:27000,
+                          bilhete:dezenas[6].slice(0,6),
+                          valor_total:dezenas[9].slice(0,20),
                           faixa:2
                        },
                        {  
                           nome:"3\u00ba Pr\u00eamio",
-                          bilhete:1709,
-                          valor_total:24000,
+                          bilhete:dezenas[11].slice(0,6),
+                          valor_total:dezenas[14].slice(0,20),
                           faixa:3
                        },
                        {  
