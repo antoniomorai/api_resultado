@@ -17,7 +17,7 @@ module.exports = {
         
      
 
-     var html = window.$("h2").text().split(")</h");
+     var html = window.$("h2").text().split("|");
      
     
 /*
