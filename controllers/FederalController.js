@@ -19,8 +19,8 @@ module.exports = {
                 var dezenas = [];
                 window.$("table td").each(function () { dezenas.push(window.$(this).text()) });
 
-                //var html = window.$("html").text().split("|");
-                var html = window.$("h2").text().split(")</h");
+                var html = window.$("html").text().split("|");
+                var cond = window.$("h2").text().split(")</h");
 
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
@@ -36,7 +36,7 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"1\u00ba Pr\u00eamio",
-                          bilhete:22061,
+                          bilhete:cond,
                           valor_total:500000,
                           faixa:1
                        },
