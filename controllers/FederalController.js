@@ -1,14 +1,4 @@
-'use strict';
-var jsdom = require('jsdom');
-
-//const url = "http://www1.caixa.gov.br/loterias/loterias/federal/federal_pesquisa.asp";
-const url = "http://www.loterias.caixa.gov.br/wps/portal/loterias/landing/federal/";
-const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
-
-module.exports = {
-    ultimoResultado: function (req, res, next) {
-
-        jsdom.env(
+'j
             url,
             ["http://code.jquery.com/jquery.js"],
             function (err, window) {
@@ -20,47 +10,100 @@ module.exports = {
      var html = window.$("h2").text().split("|");
      
     
-/*
+
                 if (html.length < 4) {
                     return res.status(404).json({ error: "Resultado não encontrado" });
                 }
 */
+                
+                          
+
+                
+                            ganhadores: html[3],
+                            valorPago: html[4]
+                        },
+                        quina: {
+                            ganhadores: html[5],
+                            valorPago: html[6]
+                        },
+                        quadra: {
+                            ganhadores: html[7],
+                            valorPago: html[8]
+                        }
+                    },
+                    arrecadacaoTotal: html[24],
+                    proximoConcurso: {
+                        data: html[22],
+                        valorEstimado: html[21],
+                    },
+                    valorAcumuladoFinalCinco: html[18],
+                    valorAcumuladoMegaVirada: html[23]
+                };
+
+                res.json(retorno);
+            }
+        );
+    }
+}
+frj'use strict';
+var jsdom = require('jsdom');
+
+const url = "http://www1.caixa.gov.br/loterias/loterias/megasena/megasena_pesquisa_new.asp";
+const query = "?submeteu=sim&opcao=concurso&txtConcurso=";
+
+module.exports = {
+    ultimoResultado: function (req, res, next) {
+
+        jsdom.env(
+            url,
+            ["http://code.jquery.com/jquery.js"],
+            function (err, window) {
+                var dezenas = [];
+                window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
+
+                var html = window.$("html").text().split("|");
+                
+
+                if (html.length < 4) {
+                    return res.status(404).json({ error: "Resultado não encontrado" });
+                }
+
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:0000,
-                    data_concurso:html[16],
+                    numero_concurso:5403,
+                    data_concurso:"2019-07-06T00:00:00-03:00",
                     data_concurso_milliseconds:1562382000000,
-                    local_realizacao:html[3],
+                    local_realizacao:"SAO PAULO, SP",
                     rateio_processamento:false,
                     premiacao:[  
                        {  
                           nome:"1\u00ba Pr\u00eamio",
-                          bilhete:000,
-                          valor_total:html[7],
+                          bilhete:22061,
+                          valor_total:500000,
                           faixa:1
                        },
                        {  
                           nome:"2\u00ba Pr\u00eamio",
-                          bilhete:html[8],
-                          valor_total:html[9],
+                          bilhete:73556,
+                          valor_total:27000,
                           faixa:2
                        },
                        {  
                           nome:"3\u00ba Pr\u00eamio",
-                          bilhete:html[10],
-                          valor_total:html[11],
+                          bilhete:1709,
+                          valor_total:24000,
                           faixa:3
                        },
                        {  
                           nome:"4\u00ba Pr\u00eamio",
-                          bilhete:html[12],
-                          valor_total:html[13],
+                          bilhete:41013,
+                          valor_total:19000,
                           faixa:4
                        },
                        {  
                           nome:"5\u00ba Pr\u00eamio",
-                          bilhete:html[14],
-                          valor_total:html[15],
+                          bilhete:82320,
+                          valor_total:18329,
                           faixa:5
                        }
                     ],
