@@ -38,7 +38,7 @@ module.exports = {
                     premiacao:[  
                        {  
                           nome:"1\u00ba Pr\u00eamio",
-                          bilhete:dezenas.slice(1,2),
+                          bilhete:dezenas[1].slice(0,6),
                           valor_total:500000,
                           faixa:1
                        },
