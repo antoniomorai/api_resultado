@@ -17,7 +17,7 @@ module.exports = {
             ["http://code.jquery.com/jquery.js"],
             function (err, window) {
                 var dezenas = [];
-                window.$("ul li").each(function () { dezenas.push(window.$(this).text()) });
+                window.$("table td").each(function () { dezenas.push(window.$(this).text()) });
 
                 var html = window.$("html").text().split("|");
                 
@@ -28,7 +28,7 @@ module.exports = {
 
                 var retorno = {  
                     nome:"FEDERAL",
-                    numero_concurso:5403,
+                    numero_concurso:dezenas.slice(1,2),
                     data_concurso:"2019-07-06T00:00:00-03:00",
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:"SAO PAULO, SP",
