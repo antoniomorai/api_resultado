@@ -38,7 +38,7 @@ module.exports = {
                 var retorno = {  
                     nome:"FEDERAL",
                     numero_concurso:dezenas[1].slice(0,6),
-                    data_concurso:informa[10].substring(0, 26),
+                    data_concurso:informa[5].substring(0, 26),
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:"SAO PAULO, SP",
                     rateio_processamento:false,
