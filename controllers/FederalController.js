@@ -20,7 +20,8 @@ module.exports = {
                 window.$("table td").each(function () { dezenas.push(window.$(this).html()) });
 
                 var html = window.$("html").text().split("|");
-                var cond = window.$("h2").text().split(")</h");
+                //var cond = window.$("h2").text().split(")</h");
+                var cond = window.$("h2").text().substring(16, 26);
                 
                 var dds = dezenas.slice(1,2);
 
@@ -31,7 +32,7 @@ module.exports = {
                 var retorno = {  
                     nome:"FEDERAL",
                     numero_concurso:dezenas[1].slice(0,6),
-                    data_concurso:"2019-07-06T00:00:00-03:00",
+                    data_concurso:cond,
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:"SAO PAULO, SP",
                     rateio_processamento:false,
