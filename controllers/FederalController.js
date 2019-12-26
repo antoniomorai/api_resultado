@@ -21,7 +21,7 @@ module.exports = {
 
                 var html = window.$("html").text().split("|");
                 //var cond = window.$("h2").text().split(")</h");
-                var cond = window.$("h2").text().substring(0, 56);
+                var cond = window.$("h2").text().substring(16, 26).split(")</h");
                 
                 var dds = dezenas.slice(1,2);
 
