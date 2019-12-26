@@ -23,6 +23,12 @@ module.exports = {
                 //var cond = window.$("h2").text().split(")</h");
                 var cond = window.$("h2").text().split(")</h");
                 
+                var informa = [];
+                window.$("h2").each(function () { informa.push(window.$(this).text()) });
+        
+              
+
+                
                 var dds = dezenas.slice(1,2);
 
                 if (html.length < 4) {
@@ -32,7 +38,7 @@ module.exports = {
                 var retorno = {  
                     nome:"FEDERAL",
                     numero_concurso:dezenas[1].slice(0,6),
-                    data_concurso:cond,
+                    data_concurso:informa[1].substring(16, 26),
                     data_concurso_milliseconds:1562382000000,
                     local_realizacao:"SAO PAULO, SP",
                     rateio_processamento:false,
