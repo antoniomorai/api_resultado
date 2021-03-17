@@ -31,7 +31,7 @@ module.exports = {
                     acumulou:html[9],
                     valor_acumulado:0,
                     dezenas: dezenas.slice(7, 14),
-                    nome_time_coracao:"Bangu\/RJ",
+                    nome_time_coracao:html[8],
                     dezena_time_coracao:"11",
                     premiacao:[  
                        {  
