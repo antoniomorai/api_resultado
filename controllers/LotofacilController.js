@@ -103,7 +103,7 @@ module.exports = {
                        }
                     ],
                     arrecadacao_total:25971124,
-                    data_proximo_concurso:"2019-07-05T00:00:00-03:00",
+                    data_proximo_concurso:html[54],
                     data_proximo_concurso_milliseconds:1562295600000,
                     valor_estimado_proximo_concurso:html[53],
                     valor_acumulado_especial:58710299.06,
